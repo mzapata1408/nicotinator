@@ -1,2 +1,5 @@
-# nicotinator
-Calculator for ejuice
+# Nicotinator
+Calculator for eJuice.
+
+## Project Details
+
