@@ -1,0 +1,2 @@
+# nicotinator
+Calculator for ejuice
