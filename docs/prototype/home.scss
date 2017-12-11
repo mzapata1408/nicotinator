@@ -19,7 +19,7 @@ $theme-colors: (
 $enable-rounded:            true !default;
 $enable-shadows:            false;
 $enable-gradients:          false;
-$enable-transitions:        true !default;
+$enable-transitions:        false !default;
 $enable-hover-media-query:  false !default;
 $enable-grid-classes:       true !default;
 $enable-print-styles:       true !default;
@@ -37,7 +37,15 @@ $link-color: #007bff;
 $font-family-base: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 $headings-font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
 
-$font-size-base: 1rem; // Assumes the browser default, typically `16px`
+$font-size-base: 1rem;
+
+
+
+
+
+
+
+ // Assumes the browser default, typically `16px`
 $font-size-h1: 2.5 * $font-size-base;
 $font-size-h2: 2 * $font-size-base;
 $font-size-h3: 1.75 * $font-size-base;
@@ -50,7 +58,13 @@ $display2-size: 5.5 * $font-size-base;
 $display3-size: 4.5 * $font-size-base;
 $display4-size: 3.5 * $font-size-base;
 
-$border-radius: .25rem;
+
+
+
+
+
+
+
 
 
 @import 'bootstrap-4.0.0-beta.1';
@@ -94,7 +108,3 @@ body > * {
   }
 }
 
-
-p {
-  margin: 0.5em;
-}
