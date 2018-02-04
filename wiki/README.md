@@ -1,7 +1,11 @@
-
 # Nicotinator's wiki page
 
 User this space to document things from the application such as installation process or run procedures.
+
+# Markdown quick reference
+
+[Markdown cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links)
+
 
 # MySql installation and configuration
 
@@ -28,3 +32,5 @@ Then quit the session and login again with the new user to verify it worked.
 ```shell
 mysql -u nicotinator -p
 ```
+
+Check this link for a quick reference to [MySql commands](https://www.digitalocean.com/community/tutorials/a-basic-mysql-tutorial)
