@@ -47,3 +47,11 @@ mysql -u nicotinator -p nicotinatordb < mysql-script.sql
 ```
 
 Check this link for a quick reference to [MySql commands](https://www.digitalocean.com/community/tutorials/a-basic-mysql-tutorial)
+
+# Running the Application
+
+Now that the database is set up, you can run the application through IntelliJ.
+
+Import the project to IntelliJ and open the class: NicotinatorApplication, then click in the play button next to the name of the class. (or in the bug for debugging)
+
+Note that the configuration file for the database connection is the file `application.properties`.
