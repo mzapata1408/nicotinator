@@ -51,63 +51,72 @@
                     <label for="recipe-name">Name</label>
                     <input id="recipe-name" type="text" class="form-control" placeholder="Recipe's Name">
                 </div>
+                <!-- Set Up -->
+                <div class="row mb-1">
+                    <!-- Base Nicotine -->
+                    <label for="base-nicotine" class="col-sm-8 col-form-label">Base Nicotine</label>
+                    <div class="input-group col-sm-4">
+                        <input type="text" class="form-control" id="base-nicotine">
+                        <span class="input-group-addon">mg/ml</span>
+                    </div>
+                </div>
+                <!-- Target Nicotine -->
+                <div class="row mb-1">
+                    <label for="target-nicotine" class="col-sm-8 col-form-label">Target Nicotine</label>
+                    <div class="col-sm-4 input-group">
+                        <input type="text" class="form-control" id="target-nicotine">
+                        <span class="input-group-addon">mg/ml</span>
+                    </div>
+                </div>
+                <!-- Target PG -->
+                <div class="row mb-1">
+                    <label for="target-pg" class="col-sm-8 col-form-label">Target PG</label>
+                    <div class="col-sm-4 input-group">
+                        <input type="text" class="form-control" id="target-pg">
+                        <span class="input-group-addon">%</span>
+                    </div>
+                </div>
+                <!-- Target VG -->
+                <div class="row mb-1">
+                    <label for="target-vg" class="col-sm-8 col-form-label">Target VG</label>
+                    <div class="col-sm-4 input-group">
+                        <input type="text" class="form-control" id="target-vg">
+                        <span class="input-group-addon">%</span>
+                    </div>
+                </div>
+
+                <!-- Quantity -->
+                <div class="row mb-1">
+                    <label for="quantity" class="col-sm-8 col-form-label">Quantity</label>
+                    <div class="col-sm-4 input-group">
+                        <input type="text" class="form-control" id="quantity">
+                        <span class="input-group-addon">ML</span>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-3">
-                <div class="dropdown">
-                    <button class="btn dropdown-toggle btn-light" data-toggle="dropdown"> Save as</button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Public</a>
-                        <a class="dropdown-item" href="#">Private</a>
+            <divider></divider>
+            <div class="col-md-6">
+                <!-- Flavours -->
+                <div class="form-group">
+                    <label for="recipe-name">Flavour</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search flavour">
+                        <span class="input-group-btn">
+                        <button class="btn btn-secondary" type="button">Add +</button>
+                    </span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="flavour-1" class="col-10 col-form-label">Flavour name number 1</label>
+                    <div class="col-2">
+                        <input class="form-control" type="text" value="5%" id="flavour-1">
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Set Up -->
-
-        <!-- Base Nicotine -->
-        <div class="row mb-1">
-            <label for="base-nicotine" class="col-sm-4 col-form-label">Base Nicotine</label>
-            <div class="col-sm-2 input-group">
-                <input type="text" class="form-control" id="base-nicotine">
-                <span class="input-group-addon">mg/ml</span>
-            </div>
-        </div>
-        <!-- Target Nicotine -->
-        <div class="row mb-1">
-            <label for="target-nicotine" class="col-sm-4 col-form-label">Target Nicotine</label>
-            <div class="col-sm-2 input-group">
-                <input type="text" class="form-control" id="target-nicotine">
-                <span class="input-group-addon">mg/ml</span>
-            </div>
-        </div>
-        <!-- Target PG -->
-        <div class="row mb-1">
-            <label for="target-pg" class="col-sm-4 col-form-label">Target PG</label>
-            <div class="col-sm-2 input-group">
-                <input type="text" class="form-control" id="target-pg">
-                <span class="input-group-addon">%</span>
-            </div>
-        </div>
-        <!-- Target VG -->
-        <div class="row mb-1">
-            <label for="target-vg" class="col-sm-4 col-form-label">Target VG</label>
-            <div class="col-sm-2 input-group">
-                <input type="text" class="form-control" id="target-vg">
-                <span class="input-group-addon">%</span>
-            </div>
-        </div>
-
-        <!-- Quantity -->
-        <div class="row mb-1">
-            <label for="quantity" class="col-sm-4 col-form-label">Quantity</label>
-            <div class="col-sm-2 input-group">
-                <input type="text" class="form-control" id="quantity">
-                <span class="input-group-addon">ML</span>
-            </div>
-        </div>
     </form>
 </div>
-<divider></divider>
+
 <div class="text-justify m-1 p-1">
     <div class="container">
         <div class="row">
@@ -185,6 +194,15 @@
             <div class="col-md-9">
                 <a class="btn btn-light pull-right" href="summary.html"><i class="fa d-inline fa-lg fa-flask bg-light">
                     Mix </i></a>
+            </div>
+            <div class="col-md-3">
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle btn-light" data-toggle="dropdown"> Save as</button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Public</a>
+                        <a class="dropdown-item" href="#">Private</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
