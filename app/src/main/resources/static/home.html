@@ -43,170 +43,146 @@
 </nav>
 
 <div class="container-fluid">
-    <form>
-        <div class="row mt-3">
-            <div class="col-md-6">
-                <!-- Name -->
-                <div class="form-group">
-                    <label for="recipe-name">Name</label>
-                    <input id="recipe-name" type="text" class="form-control" placeholder="Recipe's Name">
-                </div>
+    <div class="card mt-3">
+
+        <form>
+            <div class="row mt-3 ml-4 mr-4">
                 <!-- Set Up -->
-                <div class="row mb-1">
-                    <!-- Base Nicotine -->
-                    <label for="base-nicotine" class="col-sm-8 col-form-label">Base Nicotine</label>
-                    <div class="input-group col-sm-4">
-                        <input type="text" class="form-control" id="base-nicotine">
-                        <span class="input-group-addon">mg/ml</span>
+                <div class="col-md-4">
+                    <!-- Name -->
+                    <div class="form-group">
+                        <label for="recipe-name">Name</label>
+                        <input id="recipe-name" type="text" class="form-control" placeholder="Recipe's Name">
                     </div>
-                </div>
-                <!-- Target Nicotine -->
-                <div class="row mb-1">
-                    <label for="target-nicotine" class="col-sm-8 col-form-label">Target Nicotine</label>
-                    <div class="col-sm-4 input-group">
-                        <input type="text" class="form-control" id="target-nicotine">
-                        <span class="input-group-addon">mg/ml</span>
+
+                    <div class="row mb-1">
+                        <!-- Base Nicotine -->
+                        <label for="base-nicotine" class="col-sm-7 col-form-label">Base Nicotine</label>
+                        <div class="col-sm-5 input-group">
+                            <input type="text" class="form-control" id="base-nicotine">
+                            <span class="input-group-addon">mg/ml</span>
+                        </div>
                     </div>
-                </div>
-                <!-- Target PG -->
-                <div class="row mb-1">
-                    <label for="target-pg" class="col-sm-8 col-form-label">Target PG</label>
-                    <div class="col-sm-4 input-group">
-                        <input type="text" class="form-control" id="target-pg">
-                        <span class="input-group-addon">%</span>
+                    <!-- Target Nicotine -->
+                    <div class="row mb-1">
+                        <label for="target-nicotine" class="col-sm-7 col-form-label">Target Nicotine</label>
+                        <div class="col-sm-5 input-group">
+                            <input type="text" class="form-control" id="target-nicotine">
+                            <span class="input-group-addon">mg/ml</span>
+                        </div>
                     </div>
-                </div>
-                <!-- Target VG -->
-                <div class="row mb-1">
-                    <label for="target-vg" class="col-sm-8 col-form-label">Target VG</label>
-                    <div class="col-sm-4 input-group">
-                        <input type="text" class="form-control" id="target-vg">
-                        <span class="input-group-addon">%</span>
+                    <!-- Target PG -->
+                    <div class="row mb-1">
+                        <label for="target-pg" class="col-sm-7 col-form-label">Target PG</label>
+                        <div class="col-sm-5 input-group">
+                            <input type="text" class="form-control" id="target-pg">
+                            <span class="input-group-addon">%</span>
+                        </div>
+                    </div>
+                    <!-- Target VG -->
+                    <div class="row mb-1">
+                        <label for="target-vg" class="col-sm-7 col-form-label">Target VG</label>
+                        <div class="col-sm-5 input-group">
+                            <input type="text" class="form-control" id="target-vg">
+                            <span class="input-group-addon">%</span>
+                        </div>
+                    </div>
+
+                    <!-- Quantity -->
+                    <div class="row mb-1">
+                        <label for="quantity" class="col-sm-7 col-form-label">Quantity</label>
+                        <div class="col-sm-5 input-group">
+                            <input type="text" class="form-control" id="quantity">
+                            <span class="input-group-addon">ml</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Quantity -->
-                <div class="row mb-1">
-                    <label for="quantity" class="col-sm-8 col-form-label">Quantity</label>
-                    <div class="col-sm-4 input-group">
-                        <input type="text" class="form-control" id="quantity">
-                        <span class="input-group-addon">ML</span>
-                    </div>
-                </div>
-            </div>
-            <divider></divider>
-            <div class="col-md-6">
+                <divider></divider>
+
                 <!-- Flavours -->
-                <div class="form-group">
-                    <label for="recipe-name">Flavour</label>
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search flavour">
-                        <span class="input-group-btn">
-                        <button class="btn btn-secondary" type="button">Add +</button>
-                    </span>
+                <div class="col-md-8">
+                    <!-- Search Flavour -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <!-- Flavours -->
+                            <div class="form-group">
+                                <label for="recipe-name">Flavour</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search flavour">
+                                    <span class="input-group-btn">
+                                    <button class="btn btn-success" type="button">Add</button>
+                               </span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group row">
-                    <label for="flavour-1" class="col-10 col-form-label">Flavour name number 1</label>
-                    <div class="col-2">
-                        <input class="form-control" type="text" value="5%" id="flavour-1">
+
+                    <!-- Flavours Table -->
+                    <div class="row col-md-12">
+                        <table class="table table-hover table-sm">
+                            <thead>
+                            <tr>
+                                <th>Flavour</th>
+                                <th>%</th>
+                                <th>
+                                    <div class="col-md-1">
+                                        <div class="dropdown">
+                                            <button class="btn dropdown-toggle btn-light btn-sm" data-toggle="dropdown">
+                                                Metric
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Grams</a>
+                                                <a class="dropdown-item" href="#">ML's</a>
+                                                <a class="dropdown-item" href="#">Drops</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Blue Berry - ASDA</td>
+                                <td>10</td>
+                                <td>25</td>
+                            </tr>
+                            <tr>
+                                <td>Vanilla</td>
+                                <td>5</td>
+                                <td>25</td>
+                            </tr>
+                            <tr>
+                                <td>PG</td>
+                                <td>80</td>
+                                <td>350</td>
+                            </tr>
+                            <tr>
+                                <td>VG</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Nicotine</td>
+                                <td>1</td>
+                                <td>5</td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
+
                 </div>
             </div>
+        </form>
+        <div class="card-footer">
+            <a class="btn btn btn-outline-primary pull-right" href="summary.html"><i class="fa d-inline fa-lg fa-flask bg-light">
+                Mix </i>
+            </a>
         </div>
-    </form>
+
+    </div>
 </div>
 
-<div class="text-justify m-1 p-1">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <p class="text-center m-1">Flavour</p>
-            </div>
-            <div class="col-md-1">
-                <p class="text-center m-1">%</p>
-            </div>
-            <div class="col-md-1">
-                <div class="dropdown">
-                    <button class="btn dropdown-toggle btn-light btn-sm" data-toggle="dropdown"> Mode</button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Grams</a>
-                        <a class="dropdown-item" href="#">ML's</a>
-                        <a class="dropdown-item" href="#">Drops</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 p-1">
-                <input type="text" class="form-control form-control-sm" placeholder="Flavour 1">
-                <input type="text" class="form-control form-control-sm" placeholder="Flavour 2">
-                <input type="text" class="form-control form-control-sm" placeholder="Flavour 3">
-                <input type="text" class="form-control form-control-sm" placeholder="Flavour 4">
-                <input type="text" class="form-control form-control-sm" placeholder="Flavour 5">
-                <input type="text" class="form-control form-control-sm" placeholder="Flavour 6">
-                <input type="text" class="form-control form-control-sm" placeholder="Flavour 7">
-                <input type="text" class="form-control form-control-sm" placeholder="Flavour 8">
-                <input type="text" class="form-control form-control-sm" placeholder="Flavour 9">
-                <input type="text" class="form-control form-control-sm" placeholder="Flavour 10">
-                <p class="my-1"> PG </p>
-                <p class="my-1"> VG </p>
-                <p class="my-1"> Nicotine </p>
-            </div>
-            <div class="col-md-1 p-1 text-center">
-                <input type="text" class="form-control form-control-sm text-center">
-                <input type="text" class="form-control form-control-sm text-center">
-                <input type="text" class="form-control form-control-sm text-center">
-                <input type="text" class="form-control form-control-sm text-center">
-                <input type="text" class="form-control form-control-sm text-center">
-                <input type="text" class="form-control form-control-sm text-center">
-                <input type="text" class="form-control form-control-sm text-center">
-                <input type="text" class="form-control form-control-sm text-center">
-                <input type="text" class="form-control form-control-sm text-center">
-                <input type="text" class="form-control form-control-sm text-center">
-                <input type="text" class="form-control form-control-sm text-center">
-                <input type="text" class="form-control form-control-sm text-center">
-                <input type="text" class="form-control form-control-sm text-center"></div>
-            <div class="col-md-1 p-1">
-                <input type="text" class="form-control form-control-sm text-center">
-                <input type="text" class="form-control form-control-sm text-center">
-                <input type="text" class="form-control form-control-sm text-center">
-                <input type="text" class="form-control form-control-sm text-center">
-                <input type="text" class="form-control form-control-sm text-center">
-                <input type="text" class="form-control form-control-sm text-center">
-                <input type="text" class="form-control form-control-sm text-center">
-                <input type="text" class="form-control form-control-sm text-center">
-                <input type="text" class="form-control form-control-sm text-center">
-                <input type="text" class="form-control form-control-sm text-center">
-                <input type="text" class="form-control form-control-sm text-center">
-                <input type="text" class="form-control form-control-sm text-center">
-                <input type="text" class="form-control form-control-sm text-center"></div>
-        </div>
-    </div>
-</div>
-<div class="py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-9">
-                <a class="btn btn-light pull-right" href="summary.html"><i class="fa d-inline fa-lg fa-flask bg-light">
-                    Mix </i></a>
-            </div>
-            <div class="col-md-3">
-                <div class="dropdown">
-                    <button class="btn dropdown-toggle btn-light" data-toggle="dropdown"> Save as</button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Public</a>
-                        <a class="dropdown-item" href="#">Private</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
         integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
         crossorigin="anonymous"></script>
