@@ -7,3 +7,11 @@ CREATE TABLE recipe (
 	base_nicotine smallint NOT NULL,
 	quantity smallint
 );
+
+CREATE TABLE recipe_flavourings (
+    recipe_id serial UNIQUE NOT NULL,
+    flavouring_id int NOT NULL PRIMARY KEY,
+    percentage decimal(2, 2) NULL,
+    FOREIGN KEY (recipe_id)
+    REFERENCES recipe (id)
+);
