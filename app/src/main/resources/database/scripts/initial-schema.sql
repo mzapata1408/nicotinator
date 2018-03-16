@@ -1,3 +1,4 @@
+
 CREATE TABLE recipe (
   id int(11) UNIQUE NOT NULL AUTO_INCREMENT,
   name varchar(255) UNIQUE NOT NULL,
@@ -9,7 +10,6 @@ CREATE TABLE recipe (
   PRIMARY KEY (id),
 ) ENGINE=InnoDB;
 
-DROP TABLE IF EXISTS flavouring;
 CREATE TABLE flavouring (
     id int(11) UNIQUE NOT NULL AUTO_INCREMENT,
     name varchar(255) UNIQUE NOT NULL,
@@ -18,11 +18,10 @@ CREATE TABLE flavouring (
     INDEX (name)
 ) ENGINE=InnoDB;
 
-DROP TABLE IF EXISTS recipe_flavouring;
-CREATE TABLE recipe_flavouring (    
+CREATE TABLE recipe_flavouring (
     recipe_id int(11) NOT NULL,
     flavouring_id int(11) NOT NULL,
-    percentage decimal(2, 2) NOT NULL,
+    percentage decimal(4, 2) NOT NULL,
     PRIMARY KEY(recipe_id, flavouring_id),
     INDEX (recipe_id, flavouring_id)
 ) ENGINE=INNODB;
@@ -34,3 +33,9 @@ FOREIGN KEY (recipe_id) REFERENCES recipe(id);
 ALTER TABLE recipe_flavouring
 ADD CONSTRAINT fk_recipe_flavouring_flavouring_id
 FOREIGN KEY (flavouring_id) REFERENCES flavouring(id);
+
+
+CREATE USER IF NOT EXISTS 'nicotinator'@'localhost' IDENTIFIED BY 'a';
+GRANT ALL ON nicotinatordb.recipe_flavouring TO 'nicotinator'@'localhost';
+GRANT ALL ON nicotinatordb.flavouring TO 'nicotinator'@'localhost';
+GRANT ALL ON nicotinatordb.flavouring TO 'nicotinator'@'localhost';
