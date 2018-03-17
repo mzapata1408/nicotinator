@@ -1,4 +1,4 @@
-package com.nicotinator.home;
+package com.nicotinator.flavouring;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -6,16 +6,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.nicotinator.flavouring.FlavouringService;
-
-@RequestMapping("/home")
+@RequestMapping("/flavourings")
 @RestController
-public class HomeController {
+public class FlavouringController {
 
     @Autowired
     private FlavouringService flavouringService;
 
-    @GetMapping("greetings")
+    @GetMapping("autocomplete")
     public List<String> getFlavourNameAutocomplete(String term) {
         return flavouringService.getFlavouringNameByAutocomplete(term);
     }
